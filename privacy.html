@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BeeCommit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        .last-updated {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .contact {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="emoji">🐝</span> BeeCommit</h1>
+            <h2 style="border: none; margin-top: 10px; font-size: 1.8em; padding: 0;">Privacy Policy</h2>
+            <p class="last-updated">Last Updated: February 10, 2025</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                Welcome to BeeCommit! This Privacy Policy explains how our Chrome extension collects, uses, and protects
+                your information.
+                We are committed to protecting your privacy and being transparent about our data practices.
+            </p>
+            <p>
+                By using BeeCommit, you agree to the terms outlined in this Privacy Policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect</h2>
+            <p>BeeCommit collects and processes the following types of information:</p>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: #555;">2.1 Information You Provide</h3>
+            <ul>
+                <li><strong>GitHub Personal Access Token (PAT):</strong> You provide this token to enable the extension
+                    to interact with your GitHub repository.</li>
+                <li><strong>GitHub Repository Information:</strong> The name and owner of the repository where you want
+                    to save your solutions.</li>
+            </ul>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: #555;">2.2 Information Collected Automatically</h3>
+            <ul>
+                <li><strong>Beecrowd Submission Data:</strong> When you use the extension, it accesses your accepted
+                    submissions on Beecrowd, including problem ID, source code, and programming language.</li>
+                <li><strong>Browser Storage:</strong> Your configuration (GitHub token and repository) is stored locally
+                    in your browser using Chrome's sync storage.</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Important:</strong> BeeCommit does NOT collect, store, or transmit any personal information to
+                external servers beyond what is necessary to interact with the GitHub API.
+            </div>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>The information collected is used exclusively for the following purposes:</p>
+            <ul>
+                <li>To authenticate with the GitHub API using your Personal Access Token</li>
+                <li>To retrieve your accepted solutions from Beecrowd</li>
+                <li>To create, update, and organize files in your specified GitHub repository</li>
+                <li>To provide commit messages for your synced solutions</li>
+            </ul>
+            <p>
+                We do NOT use your information for analytics, advertising, or any other purpose not directly related to
+                the extension's core functionality.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Data Storage and Security</h2>
+            <p>Your data security is our priority:</p>
+            <ul>
+                <li><strong>Local Storage Only:</strong> Your GitHub token and repository settings are stored
+                    exclusively in your browser's local storage (<code>chrome.storage.sync</code>).</li>
+                <li><strong>No External Servers:</strong> BeeCommit does not send your data to any external servers
+                    owned or operated by us. All communication happens directly between your browser and GitHub's API.
+                </li>
+                <li><strong>Encryption:</strong> Communication with GitHub's API is done over HTTPS, ensuring your data
+                    is encrypted in transit.</li>
+                <li><strong>Token Security:</strong> We recommend using a fine-grained Personal Access Token with
+                    minimal permissions (only "Contents: Read and Write" for your specific repository).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <p>BeeCommit interacts with the following third-party services:</p>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: #555;">5.1 GitHub API</h3>
+            <p>
+                The extension uses the GitHub API to create and update files in your repository. Please review
+                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+                    target="_blank">GitHub's Privacy Policy</a>
+                for information on how GitHub handles your data.
+            </p>
+
+            <h3 style="margin-top: 20px; margin-bottom: 10px; color: #555;">5.2 Beecrowd</h3>
+            <p>
+                The extension reads submission data from Beecrowd's website when you are logged in. We do not store or
+                transmit your Beecrowd credentials.
+                Please review <a href="https://www.beecrowd.com.br/" target="_blank">Beecrowd's Privacy Policy</a> for
+                more information.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Permissions Explained</h2>
+            <p>BeeCommit requires the following Chrome permissions:</p>
+            <ul>
+                <li><strong>storage:</strong> To save your GitHub token and repository settings locally in your browser.
+                </li>
+                <li><strong>activeTab:</strong> To access the current Beecrowd page and read submission information.
+                </li>
+                <li><strong>host_permissions (judge.beecrowd.com):</strong> To interact with Beecrowd pages and retrieve
+                    your submission data.</li>
+            </ul>
+            <p>These permissions are necessary for the extension to function and are not used for any other purpose.</p>
+        </section>
+
+        <section>
+            <h2>7. Data Retention and Deletion</h2>
+            <p>
+                Your GitHub token and repository settings remain in your browser's storage until you manually delete
+                them.
+                You can remove all stored data at any time by:
+            </p>
+            <ul>
+                <li>Uninstalling the BeeCommit extension from Chrome</li>
+                <li>Clearing the extension's configuration through the extension popup</li>
+                <li>Clearing your browser's storage data</li>
+            </ul>
+            <p>
+                Once deleted, this information cannot be recovered, and you will need to reconfigure the extension.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>
+                BeeCommit is not directed to children under the age of 13. We do not knowingly collect personal
+                information from children.
+                If you believe a child has provided us with personal information, please contact us immediately.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. Any changes will be posted on this page with an
+                updated "Last Updated" date.
+                We encourage you to review this policy periodically.
+            </p>
+            <p>
+                Continued use of BeeCommit after any changes constitutes acceptance of the updated Privacy Policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the data stored by the extension in your browser</li>
+                <li>Delete your data at any time by uninstalling the extension or clearing your browser storage</li>
+                <li>Revoke the GitHub Personal Access Token at any time through your GitHub account settings</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>11. Open Source</h2>
+            <p>
+                BeeCommit is an open-source project. You can review the complete source code on
+                <a href="https://github.com/YOUR_USERNAME/beecommit" target="_blank">GitHub</a> to verify our privacy
+                practices.
+            </p>
+        </section>
+
+        <div class="contact">
+            <h2 style="margin-top: 0; border: none; padding: 0;">12. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices,
+                please contact us:
+            </p>
+            <ul style="list-style: none; margin-left: 0;">
+                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/YOUR_USERNAME/beecommit/issues"
+                        target="_blank">Open an Issue</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2025 BeeCommit. Made with 💜 and JavaScript.</p>
+            <p>This extension is not affiliated with or endorsed by Beecrowd or GitHub.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
