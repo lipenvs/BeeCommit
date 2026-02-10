@@ -2,8 +2,6 @@
 
 **BeeCommit** is a Google Chrome extension that automatically syncs your accepted solutions from [Beecrowd](https://judge.beecrowd.com/) directly to a GitHub repository.
 
-![BeeCommit Banner](PLACEHOLDER_BANNER_IMAGE_HERE)
-
 ## ✨ Features
 
 - **Simplified Manual Sync**:
@@ -24,7 +22,6 @@ Since this extension is not yet on the Chrome Web Store, you must install it man
 4. Click **Load unpacked**.
 5. Select the folder where you downloaded/cloned the project (the folder containing `manifest.json`).
 
-![How to install extension in Chrome](PLACEHOLDER_INSTALLATION_SCREENSHOT)
 
 ## ⚙️ Configuration
 
@@ -34,7 +31,6 @@ Since this extension is not yet on the Chrome Web Store, you must install it man
 3. **Repository**: Select the repository where your solutions will be saved.
 4. Click **Save**.
 
-![Configuring the extension](PLACEHOLDER_CONFIGURATION_SCREENSHOT)
 
 ## 🚀 How to Use
 
@@ -47,7 +43,6 @@ Since this extension is not yet on the Chrome Web Store, you must install it man
    - ✅ **Check**: Success! Code on GitHub.
    - ❌ **X**: Error (hover to see details).
 
-![Sync from runs list](PLACEHOLDER_RUNS_PAGE_SCREENSHOT)
 
 ### Option 2: From the Code Page (`/runs/code/{ID}`)
 
@@ -55,7 +50,6 @@ Since this extension is not yet on the Chrome Web Store, you must install it man
 2. A floating button **"🐝 Sync to GitHub"** will appear in the bottom right corner.
 3. Click to submit.
 
-![Floating button on code page](PLACEHOLDER_CODE_PAGE_SCREENSHOT)
 
 ## 📁 GitHub Structure
 
