@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeCommit</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🐝</span>
+                <h1>BeeCommit</h1>
+            </div>
+            <p class="tagline">Sync your Beecrowd solutions to GitHub</p>
+        </header>
+
+        <!-- Status Banner -->
+        <div id="status-banner" class="status-banner hidden">
+            <span id="status-icon"></span>
+            <span id="status-text"></span>
+        </div>
+
+        <!-- Configuration Form -->
+        <section class="config-section">
+            <!-- GitHub Token -->
+            <div class="field">
+                <label for="github-token">GitHub Token</label>
+                <div class="input-group">
+                    <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+                        autocomplete="off" />
+                    <button id="toggle-token" class="icon-btn" title="Show/Hide token">
+                        👁️
+                    </button>
+                </div>
+                <small class="hint">
+                    💡 Use a
+                    <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">
+                        Fine-grained PAT
+                    </a>
+                    scoped to a single repo with <strong>Contents: Read and write</strong>.
+                </small>
+            </div>
+
+            <!-- Repository Selection -->
+            <div class="field">
+                <label for="repo-select">Repository</label>
+                <select id="repo-select" disabled>
+                    <option value="">Enter token first...</option>
+                </select>
+            </div>
+
+            <!-- Auto-sync Toggle -->
+            <div class="field toggle-field">
+                <label for="auto-sync">Auto-sync accepted submissions</label>
+                <label class="switch">
+                    <input type="checkbox" id="auto-sync" checked />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Actions -->
+        <section class="actions">
+            <button id="save-btn" class="btn btn-primary" disabled>
+                💾 Save Settings
+            </button>
+            <button id="test-btn" class="btn btn-secondary" disabled>
+                🔌 Test Connection
+            </button>
+        </section>
+
+        <!-- Last Sync Info -->
+        <section id="last-sync" class="last-sync hidden">
+            <h3>Last Sync</h3>
+            <div id="last-sync-details"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>BeeCommit v1.0.0</span>
+        </footer>
+    </div>
+
+    <script src="src/popup.js"></script>
+</body>
+
+</html>

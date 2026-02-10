@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "BeeCommit",
+  "version": "1.0.0",
+  "description": "Automatically sync your accepted Beecrowd solutions to a GitHub repository.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://judge.beecrowd.com/*",
+    "https://www.beecrowd.com/*",
+    "https://api.github.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://judge.beecrowd.com/*",
+        "https://www.beecrowd.com/*"
+      ],
+      "js": [
+        "src/languages.js",
+        "src/utils.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "BeeCommit"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
