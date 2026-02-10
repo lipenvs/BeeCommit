@@ -21,14 +21,14 @@ function toBase64(str) {
 
 /**
  * Build the file path inside the GitHub repository.
- * Format: beecrowd/{problemId}/problem_{problemId}.{ext}
+ * Format: problems/{problemId}/main.{ext}
  *
  * @param {string|number} problemId
  * @param {string} ext — file extension without dot
  * @returns {string}
  */
 function buildFilePath(problemId, ext) {
-    return `beecrowd/${problemId}/problem_${problemId}.${ext}`;
+    return `problems/${problemId}/main.${ext}`;
 }
 
 /**

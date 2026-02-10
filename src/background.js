@@ -79,7 +79,7 @@ async function handleSubmission({ problemId, language, code }) {
             };
         }
 
-        const filePath = `beecrowd/${problemId}/problem_${problemId}.${langInfo.ext}`;
+        const filePath = `problems/${problemId}/main.${langInfo.ext}`;
         const commitMessage = `feat: solve problem ${problemId} in ${langInfo.label}`;
 
         // Check if file already exists (get SHA for update)

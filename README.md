@@ -9,7 +9,7 @@
   - Floating button on the code page (`/runs/code/{ID}`).
 - **No conflicts**: Checks if the file already exists and updates if necessary.
 - **Multiple language support**: Automatically detects the language (C++, Python, Java, Rust, etc.) and saves with the correct extension.
-- **Automatic Organization**: Creates folders per problem (`beecrowd/{ID}/problem_{ID}.ext`).
+- **Automatic Organization**: Creates folders per problem (`problems/{ID}/main.ext`).
 - **Semantic Commits**: Standardized messages like `feat: solve problem 1930 in Rust`.
 
 ## 🛠️ Installation (Developer Mode)
@@ -56,13 +56,13 @@ Since this extension is not yet on the Chrome Web Store, you must install it man
 Your solutions will be organized as follows:
 ```
 repository-name/
-└── beecrowd/
+└── problems/
     ├── 1000/
-    │   └── problem_1000.cpp
+    │   └── main.cpp
     ├── 1001/
-    │   └── problem_1001.py
+    │   └── main.py
     └── 1930/
-        └── problem_1930.rs
+        └── main.rs
 ```
 
 ## 🔒 Privacy and Security
