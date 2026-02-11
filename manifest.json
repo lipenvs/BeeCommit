@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "description": "Automatically sync your accepted Beecrowd solutions to a GitHub repository.",
   "permissions": [
-    "storage",
-    "activeTab"
+    "storage"
   ],
   "host_permissions": [
     "https://judge.beecrowd.com/*",
